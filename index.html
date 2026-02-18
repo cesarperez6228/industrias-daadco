@@ -304,32 +304,31 @@
                     </div>
                 </div>
 
-<div class="bg-slate-900 p-8 rounded-2xl shadow-xl max-w-lg mx-auto">
-    <h3 class="text-2xl font-bold text-daadco-primary mb-6">Solicita tu Cotización</h3>
+<div class="bg-slate-900 p-10 rounded-2xl shadow-xl max-w-2xl mx-auto border border-slate-800">
+    <h3 class="text-3xl font-bold text-daadco-primary mb-8">Solicita tu Cotización</h3>
     
-    <form action="https://formspree.io/f/mqedeeao" method="POST" class="space-y-5">
-        <div>
-            <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Nombre</label>
-            <input type="text" name="name" id="name" required 
-                   class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition">
+    <form action="https://formspree.io/f/mqedeeao" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="col-span-1">
+            <label class="block text-sm font-medium text-slate-300 mb-2">Nombre</label>
+            <input type="text" name="name" class="w-full bg-white rounded-lg p-3 text-slate-900 outline-none">
         </div>
 
-        <div>
-            <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Correo</label>
-            <input type="email" name="email" id="email" required 
-                   class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition">
+        <div class="col-span-1">
+            <label class="block text-sm font-medium text-slate-300 mb-2">Correo</label>
+            <input type="email" name="email" class="w-full bg-white rounded-lg p-3 text-slate-900 outline-none">
         </div>
 
-        <div>
-            <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Mensaje</label>
-            <textarea name="message" id="message" rows="4" required 
-                      class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition"></textarea>
+        <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-slate-300 mb-2">Mensaje</label>
+            <textarea name="message" rows="4" class="w-full bg-white rounded-lg p-3 text-slate-900 outline-none"></textarea>
         </div>
 
-        <button type="submit" 
-                class="w-full bg-daadco-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">
-            Enviar Mensaje
-        </button>
+        <div class="md:col-span-2">
+            <button type="submit" class="w-full bg-daadco-primary text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition shadow-lg text-lg">
+                Enviar Mensaje
+            </button>
+        </div>
     </form>
 </div>
 				
@@ -340,12 +339,10 @@
     <footer class="bg-slate-950 text-slate-500 py-10 text-center text-xs">
 
 	<div class="flex justify-center gap-8 mb-6">
-    	    <a href="https://www.linkedin.com/in/cesar-perez-035b673a7/" class="text-slate-400 hover:text-daadco-primary transition-all transform hover:scale-110">
-        	<i data-lucide="linkedin" class="w-6 h-6"></i>
-    	    </a>
-    	    <a href="https://www.facebook.com/CePerez62/" class="text-slate-400 hover:text-daadco-primary transition-all transform hover:scale-110">
-        	<i data-lucide="facebook" class="w-6 h-6"></i>
-    	    </a>
+			<a href="https://www.linkedin.com/in/cesar-perez-035b673a7/" target="_blank" rel="noopener noreferrer" class="text-daadco-primary hover:text-white transition">
+    		</a>
+			<a href="https://www.facebook.com/CePerez62/" target="_blank" rel="noopener noreferrer" class="text-daadco-primary hover:text-white transition">
+   			</a>
     	    <a href="mailto:cesar.perez6228@gmail.com" class="text-slate-400 hover:text-daadco-primary transition-all transform hover:scale-110">
         	<i data-lucide="mail" class="w-6 h-6"></i>
     	    </a>
@@ -397,6 +394,7 @@
 </body>
 
 </html>
+
 
 
 

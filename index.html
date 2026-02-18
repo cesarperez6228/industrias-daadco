@@ -304,26 +304,35 @@
                     </div>
                 </div>
 
-                <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-2xl">
-                    <h3 class="text-xl font-bold mb-6 text-daadco-accent">Solicita tu Cotización</h3>
-						<form action="https://formspree.io/f/mqedeeao" method="POST" class="space-y-4">
-  						<div>
-    						<label class="block text-sm font-medium text-slate-700">Nombre</label>
-    						<input type="text" name="name" required class="w-full border-slate-300 rounded-lg p-2 shadow-sm">
-  						</div>
-  						<div>
-    						<label class="block text-sm font-medium text-slate-700">Correo</label>
-    						<input type="email" name="email" required class="w-full border-slate-300 rounded-lg p-2 shadow-sm">
-  						</div>
-  						<div>
-    						<label class="block text-sm font-medium text-slate-700">Mensaje</label>
-    						<textarea name="message" required class="w-full border-slate-300 rounded-lg p-2 shadow-sm h-32"></textarea>
-  						</div>
-  						<button type="submit" class="w-full bg-daadco-primary text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition">
-    						Enviar Mensaje
-  						</button>
-						</form>
-                </div>
+<div class="bg-slate-900 p-8 rounded-2xl shadow-xl max-w-lg mx-auto">
+    <h3 class="text-2xl font-bold text-daadco-primary mb-6">Solicita tu Cotización</h3>
+    
+    <form action="https://formspree.io/f/mqedeeao" method="POST" class="space-y-5">
+        <div>
+            <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Nombre</label>
+            <input type="text" name="name" id="name" required 
+                   class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition">
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Correo</label>
+            <input type="email" name="email" id="email" required 
+                   class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition">
+        </div>
+
+        <div>
+            <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Mensaje</label>
+            <textarea name="message" id="message" rows="4" required 
+                      class="w-full bg-white border border-slate-700 rounded-lg p-3 text-slate-900 focus:ring-2 focus:ring-daadco-primary outline-none transition"></textarea>
+        </div>
+
+        <button type="submit" 
+                class="w-full bg-daadco-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">
+            Enviar Mensaje
+        </button>
+    </form>
+</div>
+				
             </div>
         </div>
     </section>
@@ -388,6 +397,7 @@
 </body>
 
 </html>
+
 
 
 

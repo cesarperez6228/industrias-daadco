@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mensaje = $_POST['message'];
     
-    $destinatario = "contacto@daadco.com.mx";
+    $destinatario = "cesar.perez6228@gmail.com";
     $asunto = "Nueva Cotización: " . $nombre;
     
     // Formato mejorado con tabla y mejores espacios

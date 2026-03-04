@@ -4,20 +4,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mensaje = $_POST['message'];
     
-    $destinatario = "cesar.perez6228@gmail.com";
-    $asunto = "Nueva Cotización de: " . $nombre;
+    $destinatario = "contacto@daadco.com.mx";
+    $asunto = "Nueva Cotización: " . $nombre;
     
+    // Formato mejorado con tabla y mejores espacios
     $cuerpo = "
     <html>
-    <head><title>Nueva Cotización DAADCO</title></head>
-    <body style='font-family: Arial, sans-serif; color: #333;'>
-      <div style='background-color: #0056b3; color: white; padding: 20px; text-align: center;'>
-        <h2>Industrias DAADCO</h2>
-      </div>
-      <div style='padding: 20px; border: 1px solid #eee;'>
-        <p><strong>Nombre:</strong> $nombre</p>
-        <p><strong>Correo:</strong> $email</p>
-        <p><strong>Mensaje:</strong><br>$mensaje</p>
+    <body style='font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;'>
+      <div style='max-width: 600px; margin: 0 auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);'>
+        <div style='background-color: #0056b3; color: white; padding: 30px; text-align: center;'>
+          <h1 style='margin: 0; font-size: 24px;'>Industrias DAADCO</h1>
+          <p style='margin: 5px 0 0; opacity: 0.8;'>Nueva solicitud de cotización</p>
+        </div>
+        <div style='padding: 30px;'>
+          <table style='width: 100%; border-collapse: collapse;'>
+            <tr>
+              <td style='padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 30%;'>Cliente:</td>
+              <td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$nombre</td>
+            </tr>
+            <tr>
+              <td style='padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold;'>Correo:</td>
+              <td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$email</td>
+            </tr>
+          </table>
+          <div style='margin-top: 25px;'>
+            <p style='font-weight: bold; margin-bottom: 10px;'>Mensaje del interesado:</p>
+            <div style='background: #f4f4f4; padding: 15px; border-radius: 5px; font-style: italic;'>
+              $mensaje
+            </div>
+          </div>
+        </div>
+        <div style='background: #eee; padding: 15px; text-align: center; font-size: 12px; color: #666;'>
+          Este es un correo automático enviado desde daadco.com.mx
+        </div>
       </div>
     </body>
     </html>
